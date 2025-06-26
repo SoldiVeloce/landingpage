@@ -24,9 +24,11 @@
       padding: 40px;
     }
 
-    .logo {
-      font-family: 'Great Vibes', cursive;
-      font-size: 2.5rem;
+    /* Logo als Bild statt Text */
+    .logo img {
+      max-width: 200px;
+      height: auto;
+      display: block;
     }
 
     .bottom-right {
@@ -46,6 +48,35 @@
       display: block;
     }
 
+    /* TikTok Button Styling */
+    .tiktok-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: #000;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Inter', sans-serif;
+      margin-top: 15px;
+      border: 2px solid white;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .tiktok-button:hover {
+      background-color: #ff0050;
+      border-color: #ff0050;
+      color: white;
+    }
+
+    .tiktok-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      fill: currentColor;
+    }
+
     @media (max-width: 768px) {
       .bottom-right {
         align-self: flex-start;
@@ -55,7 +86,10 @@
   </style>
 </head>
 <body>
-  <div class="logo">Soldi Veloce</div>
+  <div class="logo">
+    <!-- Pfad zum Logo anpassen! -->
+    <img src="images/soldiveloce-logo.png" alt="Soldi Veloce Logo" />
+  </div>
   <div class="bottom-right">
     <p>It's not here yet, but we'll let you in on a secret. It's coming really, really soon.</p>
     <small>
@@ -63,6 +97,13 @@
       Send us an email at <a href="mailto:info@soldiveloce.com" style="color:white;">info@soldiveloce.com</a><br/>
       Or follow us at <strong>@soldiveloce</strong> on TikTok
     </small>
+    <a href="https://www.tiktok.com/@soldiveloce?_t=ZN-8xWXhMQfIrX&_r=1" target="_blank" rel="noopener noreferrer" class="tiktok-button" aria-label="TikTok Kanal von Soldi Veloce">
+      <svg class="tiktok-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M9.5 3c0 3.037 2.463 5.5 5.5 5.5v2a7.5 7.5 0 1 1-7.5-7.5v2a5.5 5.5 0 1 0 0 11 5.508 5.508 0 0 0 5.5-5.5h-2A3.5 3.5 0 1 1 9.5 3z"/>
+      </svg>
+      TikTok folgen
+    </a>
   </div>
 </body>
 </html>
+
