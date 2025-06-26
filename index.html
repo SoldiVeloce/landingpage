@@ -3,22 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome</title>
+  <title>Soldi Veloce</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: sans-serif;
-      background: #f4f4f4;
+      background-color: #000;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      justify-content: space-between;
+      padding: 40px;
     }
-    h1 { color: #333; }
+
+    .logo {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5rem;
+    }
+
+    .bottom-right {
+      align-self: flex-end;
+      text-align: right;
+      max-width: 300px;
+    }
+
+    .bottom-right p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .bottom-right small {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .bottom-right {
+        align-self: flex-start;
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to SoldiVeloce</h1>
-  <p>More coming soon...</p>
+  <div class="logo">Soldi Veloce</div>
+  <div class="bottom-right">
+    <p>It's not here yet, but we'll let you in on a secret. It's coming really, really soon.</p>
+    <small>
+      Really excited to get in touch with us?<br/>
+      Send us an email at <a href="mailto:info@soldiveloce.com" style="color:white;">info@soldiveloce.com</a><br/>
+      Or follow us at <strong>@soldiveloce</strong> on TikTok
+    </small>
+  </div>
 </body>
 </html>
